@@ -1,11 +1,199 @@
 /* Add your CSS to this file */
 body {
     margin: 0;
-    font-size: 16px;
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
 }
 
 .container {
     margin: 0 auto;
     max-width: 960px;
     width: 100%;
+}
+header {
+    background-color: white;
+    font-size: 18px;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1 {
+    font-size: 18px;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+nav a{
+    color: #6b7280;
+    text-decoration: none;
+}
+nav a:hover{
+    color: #5A67D8;
+}
+
+.overview-hero {
+    background-color: #E2E8F0;
+}
+
+.overview-hero .container{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.overview-hero-image, .overview-hero-text{
+    flex: 1;
+}
+
+.learn-about h2 {
+    font-size: 24px;
+    color: #48BB78;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.card {
+    border: 1px solid #E2E8F0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    font-size: 21px;
+    color: #48BB78;
+}
+
+.testing {
+    background-color: #4A5568;
+    color: white;
+}
+
+.testing .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.cta .btn {
+    background-color: #48BB78;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.stories h2 {
+    color: #5A67D8;
+}
+
+.stories article {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.stories article img {
+    border-radius: 50%;
+}
+
+.stories article h3 {
+    font-size: 18px;
+}
+
+.stories article a {
+    color: #5A67D8;
+}
+
+.newsletter {
+    background-color: #48BB78;
+    color: white;
+    text-align: center;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.newsletter .btn {
+    background-color: #5A67D8;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.newsletter input {
+    padding: 12px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #4A5568;
+    color: white;
+}
+
+.stories article {
+    margin-bottom: 30px;
+}
+
+.stories article img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.newsletter {
+    padding: 40px 0;
+}
+
+footer .container {
+    padding: 20px 0;
+}
+
+header .container {
+    padding: 20px 0;
+}
+
+.overview-hero .container {
+    padding: 60px 0;
+}
+
+.learn-about {
+    padding: 40px 0;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.testing .container {
+    padding: 40px 0;
+}
+
+.cta .btn {
+    display: inline-block;
+    padding: 12px 24px;
+}
+
+.stories {
+    padding: 40px 0;
 }
